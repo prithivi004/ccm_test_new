@@ -79,7 +79,9 @@ const AllQ = React.lazy(() => import("./administration/billing/Status/AllQ.js"))
 
 export default function BaseRouter() {
 
-  const isLogin = localStorage.getItem('isLogin')
+  const isLogin = localStorage.getItem('isLogin');
+  console.log('process.env.REACT_APP_URL');
+  console.log(process.env.REACT_APP_URL);
   return(
     <>
     
