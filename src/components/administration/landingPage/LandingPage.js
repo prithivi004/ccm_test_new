@@ -137,6 +137,8 @@ const LandingPage=(props)=> {
        
 
     React.useEffect(()=>{
+		console.log('process.env.REACT_APP_URL');
+		console.log(process.env.REACT_APP_URL);
         axios.post('/country/list')
             .then((res) => {
                 const countries = res.data.response.country_list
